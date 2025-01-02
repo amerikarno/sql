@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/amerikarno/sql/tables"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 )
@@ -31,4 +32,8 @@ func Init(dbs *([]*gorm.DB), cfgs ...*Database) {
 		log.Printf("connected to database %s", cfg.DBName)
 		*dbs = append(*dbs, db)
 	}
+}
+
+func NewTable[T any]() *tables.Table[T] { // *Table[T] {
+	return &tables.Table[T]{}
 }
