@@ -15,7 +15,7 @@ func New() *Sql {
 	return &Sql{}
 }
 
-func Init(dbs *([]*gorm.DB), cfgs ...*Database) {
+func (s *Sql) Init(dbs *([]*gorm.DB), cfgs ...*Database) {
 	// var err error
 	for i := range cfgs {
 		cfg := cfgs[i]
