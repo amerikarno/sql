@@ -8,14 +8,15 @@ import (
 	"gorm.io/gorm"
 )
 
-type Sql struct {
-}
+// type Sql struct {
+// }
 
-func New() *Sql {
-	return &Sql{}
-}
+// func New() *Sql {
+// 	return &Sql{}
+// }
 
-func (s *Sql) Init(dbs *([]*gorm.DB), cfgs ...*Database) {
+// func (s *Sql) Init(dbs *([]*gorm.DB), cfgs ...*Database) {
+func Init(dbs *([]*gorm.DB), cfgs ...*Database) {
 	// var err error
 	for i := range cfgs {
 		cfg := cfgs[i]
