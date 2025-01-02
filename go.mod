@@ -1,4 +1,4 @@
-module github.com/amerikarno/sql.git
+module github.com/amerikarno/sql
 
 go 1.22.1
 
