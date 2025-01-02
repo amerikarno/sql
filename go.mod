@@ -13,3 +13,5 @@ require (
 	github.com/jinzhu/now v1.1.5 // indirect
 	golang.org/x/text v0.14.0 // indirect
 )
+
+replace github.com/amerikarno/sql => github.com/amerikarno/sql.git v0.0.0-20250102025436-2647c239b68e
